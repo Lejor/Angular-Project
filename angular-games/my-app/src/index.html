@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Games Genre - Projeto Angular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/favicons/icone.png">
+</head>
+
+<body>
+  <app-root></app-root>
+  <script>
+    function openNav() {
+      var element = document.getElementById("menuLateral");
+      var element1 = document.getElementById("telaPrincipal");
+      var element2 = document.getElementById("fundoMenu");
+      element.classList.toggle("abrirMenu");
+      element1.classList.toggle("abrirMenu");
+      element2.classList.add("zIndex");
+
+      // document.getElementById("mySidenav").style.width = "250px";
+      // document.getElementById("main").style.marginLeft = "250px";
+      // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      // document.getElementById("mySidenav").style.width = "0";
+      // document.getElementById("main").style.marginLeft= "0";
+      // document.body.style.backgroundColor = "white";
+    }
+  </script>
+  <script>
+    // Get the modal
+
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      var classes = event.target.classList;
+      // alert(event.target.nodeName);
+   
+      var modal = document.getElementById('menuLateral');
+      if (/* event.target.nodeName == 'DIV' || */
+          event.target.classList.contains('pi pi-home')
+         ) {
+        
+        var element = document.getElementsByClassName("menuLateral");
+        var element1 = document.getElementsByClassName("telaPrincipal");
+        var element2 = document.getElementById("fundoMenu");
+        element.classList.remove("abrirMenu");
+        element1.classList.remove("abrirMenu");
+        element2.classList.remove("zIndex");
+        
+      } 
+
+      if(event.target.classList == 'p-menuitem-text ng-star-inserted' ||
+          event.target.nodeName == 'DIV' ||
+          event.target.nodeName == 'IMG'){
+        openNav();
+        var element2 = document.getElementById("fundoMenu");
+        element2.classList.remove("zIndex");
+      }
+      
+    }
+
+  </script>
+</body>
+
+</html>
+

@@ -1,0 +1,15 @@
+a:link, a:visited {
+    font-size: 20px;
+    color: (internal value);
+    text-decoration: underline;
+    cursor: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-display: sans-serif;
+  }
+  
+  a:link:active, a:visited:active {
+      font-size: 20px;
+    color: (internal value);
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-display: sans-serif;
+  }

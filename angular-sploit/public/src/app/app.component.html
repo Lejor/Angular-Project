@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/home/mundoaberto']">Mundo Aberto</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/rpgturno']">RPG de Turno</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/plataforma']">Plataforma</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/metroidvania']">Metroidvania</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/luta']">Luta</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/rpg-tatico']">RPG-Tático</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/fps']">FPS</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/rpg']">RPG</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/souls-like']">Souls Like</a></li><br>
+              <li><a class="dropdown-item" [routerLink]="['/home/coletaton']">Coletaton</a></li><br>
+         
+         
+             
+            </ul>
+          </li>
+        
+         
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container p-5">
+  <!-- Calling routing components --> 
+  <router-outlet></router-outlet>
+  </div>  
